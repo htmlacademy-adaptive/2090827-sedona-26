@@ -9,7 +9,8 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="/">
-      <img class="main-header__logo-image" src="img/logo.png" alt="Логотип города Седона." width="185" height="96" />
+      <img class="main-header__logo-image" src="img/logo.png" alt="Логотип
+          города Седона." width="185" height="96" />
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -32,7 +33,8 @@
             <a class="main-nav__link" href="form.html">Форма Отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru">HTML ACADEMY</a>
+            <a class="main-nav__link" href="https://htmlacademy.ru" target="_blank">HTML
+              ACADEMY</a>
           </li>
         </ul>
       </div>
@@ -54,23 +56,23 @@
       <form class="review__form" action="https://echo.htmlacademy.ru/" method="GET">
         <fieldset class="review">
           <legend class="review__title">Представьтесь:</legend>
-          <label class="review_label" for="name">ИМЯ*:</label>
+          <label class="review__label" for="name">ИМЯ*:</label>
           <input class="review__input" id="name" name="name" type="text" value="Пётр" required />
-          <label class="review_label" for="lastname">ФАМИЛИЯ*:</label>
+          <label class="review__label" for="lastname">ФАМИЛИЯ*:</label>
           <input class="review__input" id="lastname" name="lastname" type="text" value="Пустота" required />
-          <label class="review_label" for="middlename">Отчество:</label>
+          <label class="review__label" for="middlename">Отчество:</label>
           <input class="review__input" id="middlename" name="middlename" value="Викторович" type="text" />
         </fieldset>
         <fieldset>
           <legend class="review__title">Контактная информация:</legend>
-          <label class="review_label" for="phone">Контактный телефон*:</label>
+          <label class="review__label" for="phone">Контактный телефон*:</label>
           <input class="review__input" id="phone" name="phone" placeholder="Введите телефон" type="tel" required />
           <svg width="58" height="58" viewbox="0 0 58 58" xmlns="http://www.w3.org/2000/svg">
             <path fill="#E6E6E6" d="M0 0h58v58H0z" />
             <path
               d="M23.6 27.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V37c0 .6-.4 1-1 1a17 17 0 0 1-17-17c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z" />
           </svg>
-          <label class="review_label" for="e-mail">Электронная почта*:</label>
+          <label class="review__label" for="e-mail">Электронная почта*:</label>
           <input class="review__input"id="e-mail" name="e-mail" placeholder="Введите e-mail" type="email" required />
           <svg width="58" height="58" viewbox="0 0 58 58" xmlns="http://www.w3.org/2000/svg">
             <path fill="#E6E6E6" d="M0 0h58v58H0z" />
@@ -164,7 +166,7 @@
     <h2 class="modal__title">
       ЧТО-ТО ПОШЛО НЕ ТАК!
     </h2>
-    <p class="modal_description">
+    <p class="modal__description">
       Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
     </p>
     <button class="button modal__button" type="button">OK</button>
@@ -173,7 +175,7 @@
     <h2 class="modal__title">
       Ваш отзыв отправлен!
     </h2>
-    <p class="modal_description">
+    <p class="modal__description">
       Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.
     </p>
     <button class="button modal__button" type="button">ЗАкРЫТЬ ОКНО</button>
