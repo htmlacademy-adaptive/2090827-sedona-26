@@ -25,5 +25,25 @@ img {
   width: 320px;
   margin: auto;
   background-color: @page-background;
-  font-family: "PT Sans", "Arial" ;
+  font-family: "PT Sans", sans-serif;
+}
+
+.text(big) {
+  font-size: @font-big-size;
+  line-height: @font-big-height;
+  font-weight: @font-big-weight;
+}
+
+.text(small) {
+  font-size: @font-base-size;
+  line-height: @font-base-height;
+  font-weight: @font-base-weight;
+}
+
+.button {
+  background-color: @blue-light;
+  border: none;
+  color: @white;
+  text-transform: uppercase;
+  .text(big);
 }
