@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page__body {
+  width: 320px;
+  margin: auto;
+  background-color: @page-background;
+  font-family: "PT Sans", sans-serif;
+}
+
+.text(big) {
+  font-size: @font-big-size;
+  line-height: @font-big-height;
+  font-weight: @font-big-weight;
+}
+
+.text(big21px) {
+  .text(big);
+  font-size: 21px;
+}
+
+.text(small) {
+  font-size: @font-base-size;
+  line-height: @font-base-height;
+  font-weight: @font-base-weight;
+}
+
+.button {
+  background-color: @blue-light;
+  border: none;
+  color: @white;
+  text-transform: uppercase;
+  .text(big);
+}
+
+@media (min-width: @tablet-width) {
+  .page__body {
+    width: @tablet-width;
+  }
+}
