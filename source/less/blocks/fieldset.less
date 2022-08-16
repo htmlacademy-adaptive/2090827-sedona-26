@@ -1,0 +1,90 @@
+.form {
+  background-color: @white;
+}
+
+.form__head {
+  margin: 0;
+  padding: 36px 20px 0 20px;
+  .text(big);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__description {
+  margin: 0;
+  margin-top: 24px;
+  padding: 0 20px;
+  .text(small);
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 28px;
+  border-bottom: 2px solid @gray;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  border-style: none;
+  border-bottom: 2px solid @gray;
+}
+
+.fieldset__title {
+  margin: 0;
+  padding-top: 24px;
+  .text(big);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.fieldset__label {
+  .text(small);
+  text-transform: uppercase;
+}
+
+.fieldset__input {
+  background-color: @gray-medium;
+  .text(big);
+  height: 58px;
+}
+
+.fieldset__radio {
+  .text(big);
+}
+
+.fieldset__checkbox {
+  .text(big);
+  padding: 10px 0;
+}
+
+.checkbox {
+  margin-bottom: 16px;
+  height: 26px;
+}
+
+.fieldset__textarea {
+  height: 150px;
+  background-color: @gray-medium;
+  resize: none;
+  border: none;
+}
+
+.fieldset__textarea::placeholder {
+  .text(big);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.fieldset__note {
+  margin: 0;
+  .text(small);
+  font-size: 12px;
+  text-align: right;
+}
+
+.form__button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 56px;
+  padding: 18px 34px 13px 32px;
+  align-items: center;
+}

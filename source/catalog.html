@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -13,16 +14,8 @@
           города Седона." width="185" height="96" />
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <svg width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
-          <path d="M22.9 0H0V4H22.9V0Z" />
-          <path d="M22.9 9H0V13H22.9V9Z" />
-          <path d="M22.9 18H0V22H22.9V18Z" />
-        </svg>
-        <span class="visually-hidden">Открыть меню.</span>
-      </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list visually-hidden">
           <li class="main-nav__item">
             <a class="main-nav__link" href="/">Главная</a>
           </li>
@@ -37,12 +30,27 @@
               ACADEMY</a>
           </li>
         </ul>
+        <button class="main-nav__toggle button_open " type="button">
+          <svg width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.9 0H0V4H22.9V0Z" />
+            <path d="M22.9 9H0V13H22.9V9Z" />
+            <path d="M22.9 18H0V22H22.9V18Z" />
+          </svg>
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <button class="main-nav__toggle button_close visually-hidden" type="button">
+          <svg width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z"/>
+          </svg>
+          <span class="visually-hidden">Закрыть меню.</span>
+        </button>
       </div>
     </nav>
   </header>
 
   <main class="main-container">
-    <div class="main-container__header">
+    <div class="main-container__header divider--after">
       <img class="main-container-header__image" src="img/background.jpg" alt="Горы." width="320" height="214">
     </div>
     <section class="photo">
@@ -54,7 +62,7 @@
         <li class="photo__item">
           <div class="photo__card card">
             <a class="card__link" href="#" target="_blank">
-            <img class="card__image" src="img/photo-road.jpg" alt="Дорога." width="280" height="280">
+              <img class="card__image" src="img/photo-road.jpg" alt="Дорога." width="280" height="280">
             </a>
             <h2 class="card__title">Неродные просторы</h2>
             <p class="card__description">Автор фото: Борис</p>
@@ -73,7 +81,7 @@
         <li class="photo__item">
           <div class="photo__card card">
             <a class="card__link" href="#" target="_blank">
-            <img class="card__image" src="img/photo-plant.jpg" alt="Растение." width="280" height="280">
+              <img class="card__image" src="img/photo-plant.jpg" alt="Растение." width="280" height="280">
             </a>
             <h2 class="card__title">Местная растительность</h2>
             <p class="card__description">Автор фото: Сергей</p>
@@ -92,7 +100,7 @@
         <li class="photo__item">
           <div class="photo__card card">
             <a class="card__link" href="#" target="_blank">
-            <img class="card__image" src="img/photo-road-rocks.jpg" alt="Дорога." width="280" height="280">
+              <img class="card__image" src="img/photo-road-rocks.jpg" alt="Дорога." width="280" height="280">
             </a>
             <h2 class="card__title">Дорога на север</h2>
             <p class="card__description">Автор фото: Петр</p>
@@ -111,7 +119,7 @@
         <li class="photo__item">
           <div class="photo__card card">
             <a class="card__link" href="#" target="_blank">
-            <img class="card__image" src="img/photo-road.jpg" alt="Дорога." width="280" height="280">
+              <img class="card__image" src="img/photo-road.jpg" alt="Дорога." width="280" height="280">
             </a>
             <h2 class="card__title">Мост дьявола</h2>
             <p class="card__description">Автор фото: Антон</p>
@@ -168,10 +176,12 @@
         <p class="copyright__title">
           Разработано
         </p>
-        <a class="copyright__link" href="https://htmlacademy.ru" target="_blank"></a>><span class="visually-hidden">htmlacademy</span></a>
+        <a class="copyright__link" href="https://htmlacademy.ru" target="_blank"></a><span
+          class="visually-hidden">htmlacademy</span></a>
       </div>
     </div>
   </footer>
+
 </body>
 
 </html>
