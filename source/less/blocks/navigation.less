@@ -45,10 +45,39 @@
   top: 0;
   z-index: 2;
 }
+
 .button_open svg {
   fill: @blue-light;
 }
 
 .button_close svg {
   fill: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .main-nav__item--push {
+    margin-left: auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    width: 768px;
+  }
+
+  .main-nav__item {
+    background-color: @white;
+  }
+
+  .main-nav__link {
+    color: @black;
+    width: 153px;
+  }
 }
