@@ -71,3 +71,19 @@
   background-color: @blue-light;
   color: @white;
 }
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .additional__list {
+    display: flex;
+  }
+
+  .additional--blue {
+    grid-column: 1/4;
+  }
+}
+
